@@ -1,12 +1,13 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: yellowgreen; color: white; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #F7EFE5; color: #000000; }
 
-nav { background: #007bff; padding: 15px; text-align: center; }
+nav { background: #B5C18E; padding: 15px; text-align: center; }
 
-nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; font-weight: bold; }
+nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 20px; font-weight: bold; }
 
-section { padding: 50px; text-align: center; background: brown; margin: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+section { padding: 50px; text-align: center; background: #B5C18E; margin: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
 
 h1, h2 { color: #007bff; }
+p      {font-size: 20px}
 
 form { background: #blueviolet; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: inline-block; }
 
@@ -19,3 +20,74 @@ input, select { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #c
 button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
 
 button:hover { background: #0056b3; }
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 350px;
+            background: linear-gradient(45deg, #0044cc, #00ccff);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 180px;
+            height: auto;
+            animation: spin 5s linear infinite;
+        }
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            opacity: 0;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            animation: fadeInOut 4s ease-in-out infinite;
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(-20px); }
+            50% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(20px); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* Empêcher le zoom automatique */
+meta[name="viewport"] {
+  content: "width=device-width, initial-scale=1.0";
+}
+
+/* Ajuster la largeur des éléments */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Styles spécifiques aux écrans mobiles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
